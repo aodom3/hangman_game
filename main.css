@@ -1,7 +1,13 @@
 button{
-    background-color: red;
+    background-color:red;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 30px;
+    color: antiquewhite
+}
+body{
+    background-image:url(images/dead2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* *{
     background-color: black;
