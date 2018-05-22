@@ -1,9 +1,4 @@
-button{
-    background-color:red;
-    cursor: pointer;
-    font-size: 30px;
-    color: antiquewhite
-}
+
 body{
     background-image:url(images/dead2.jpg);
     background-repeat: no-repeat;
@@ -13,3 +8,7 @@ body{
     background-color: black;
 
 } */
+#deadpool{
+    width: 200%
+    height: 400%
+}
