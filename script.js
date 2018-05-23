@@ -1,4 +1,10 @@
-$(document).ready()
+// once the page loads up
+
+$(document).ready(function(){
+ 
+
+    }
+}
 
 
 
