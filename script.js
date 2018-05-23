@@ -1,35 +1,96 @@
-// // once the page loads up
-// $(document).ready(function(){
+/*------------- constants -------------*/
+var words = [ 
+    'SPONGEBOB',
+    'SQUIDWARD',
+    'JIMMY NEUTRON',
+    'COSMO',
+    'WANDA',
+    'TIMMY TURNER',
+    'MR KRABS',
+    'MRS PUFF',
+    'SANDY CHEEKS',
+    'DIDI PICKLES',
+    'PATRICK STAR',
+    'CARL WHEEZER'
 
-// --------------------words and word bank-------------------------------------------
+];
 
-// // words being used
-const words = ["pizza", "golden girls", "unicorn", "chimichanga"];
+/*------------- app's state -------------*/
+var secretWord, wrongCount, guess;
 
-// // random word chosen from the array of words
-let secretWord = words[Math.floor(Math.random() * words.length)];
+/*------------- cached element references -------------*/
+var $guess = $('#guess');
+var $img = $('#hang-img');
+var $message = $('#message');
 
-// // blank "_" that is shown on the screen to be populated
-//has to match the letters;loops to same length as the words
-const ansArray = [];
-for (let i = 0; i < words.length; i++) {
-	ansArray[i] = "_";
+/*------------- event listeners -------------*/
+$('#letters').on('click', handleLetterClick);
+
+$('#reset').on('click', initialize);
+
+/*------------- functions -------------*/
+initialize();
+
+function initialize() {
+    wrongCount = 0;
+    secretWord = words[getRandomInt(words.length -1)];
+
+    guess = "";
+    
+    for (var i = 0; i < secretWord.length; i++) {
+      var currentLetter = secretWord[i];
+      if (currentLetter === " ") {
+          guess += " "
+      } else {
+          guess += "_";
+      }
+    };
+
+    $('button.letter-button').prop('disabled', false);
+    render();
 }
 
-//resets the page if player wants to
-function myFunction() {
-	location.reload()
+function getRandomInt(max) {
+    return Math.floor (Math.random() * (max + 1));
 }
 
+function render() {
+    $guess.html(guess);
+    $('#wrong').html(`WRONG GUESSES: ${wrongCount}`);
+    $img.attr('src', 'images/img' + wrongCount + '.png')
 
+    if (guess === secretWord) {
+        $message.html("Congratulations!! You solved HangMan!");
+        $message.fadeIn();
+    } else if ( wrongCount === 6) {
+        $message.html("Sorry! You've run out of chances.");
+        $message.fadeIn();
+    } else {
+        $message.html("")
+        $message.hide();
+    }
+}
 
+function handleLetterClick (evt) {
+    if (wrongCount === 6) return;
 
-
-// let remainingGuesses < 6;
-// $function(){
-//     $('letters').on('click' function(light))
-// }
-// function gameEnd(win)
-// if (win)
-// else
-// }
+    var letter = evt.target.textContent;
+    console.log(secretWord);
+    if (secretWord.includes(letter)) {
+        var pos = secretWord.indexOf(letter);
+        while ( pos >= 0) {
+            guess = guess.split('');
+            guess[pos] = letter;
+            guess = guess.join('');
+            pos = secretWord.indexOf(letter,pos +1);
+        }
+    } else {
+        if (evt.target.id !== "reset") {
+            wrongCount++;
+        }
+    }
+    
+    $(evt.target).prop('disabled', true);
+    $('#reset').prop('disabled', false);
+    render();
+}
