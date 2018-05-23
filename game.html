@@ -8,21 +8,56 @@
 	<link href="main.css" rel="stylesheet" type="text/css"><!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudFlare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"> -->
 </head>
 <body>
-  	<h1>DeadMan (HangMan + Deadpool Style</h1><br>
-	<img class="deadpool" src="images/deadpool.png">
+    <h1>DeadMan (HangMan + Deadpool Style)</h1><br>
+<!-- 
+    diffrent body parts that will be deleted as wrong questions are answered -->
+  <div class = "dead"> 
+    <img class="deadpool" src="images/deadpool.png"> 
+    <img class="deadpool2">
+    <img class="deadpool3">
+    <img class="deadpool4">
+    <img class="deadpool5">
+    <img class="deadpool6">
+  </div>
 	<div class="alphabet">
 		<div class="alphaBegin">
-			<button class="ui toggle button" id="A&quot;">A</button> <button class="ui toggle button" id="B&quot;">B</button> <button class="ui toggle button" id="C&quot;">C</button> <button class="ui toggle button" id="D&quot;">D</button> <button class="ui toggle button" id="E&quot;">E</button> <button class="ui toggle button" id="F&quot;">F</button> <button class="ui toggle button" id="G&quot;">G</button> <button class="ui toggle button" id="H&quot;">H</button> <button class="ui toggle button" id="I&quot;">I</button> <button class="ui toggle button" id="J&quot;">J</button> <button class="ui toggle button" id="K&quot;">K</button> <button class="ui toggle button" id="L&quot;">L</button> <button class="ui toggle button" id="M&quot;">M</button>
-		</div><br>
-		<div class="alphaLast">
-			<button class="ui red toggle button" id="N&quot;">N</button> <button class="ui red toggle button" id="O&quot;">O</button> <button class="ui red toggle button" id="P&quot;">P</button> <button class="ui red toggle button" id="Q&quot;">Q</button> <button class="ui red toggle button" id="R&quot;">R</button> <button class="ui red toggle button" id="S&quot;">S</button> <button class="ui red toggle button" id="T&quot;">T</button> <button class="ui red toggle button" id="U&quot;">U</button> <button class="ui red toggle button" id="V&quot;">V</button> <button class="ui red toggle button" id="W&quot;">W</button> <button class="ui red toggle button" id="X&quot;">X</button> <button class="ui red toggle button" id="Y&quot;">Y</button> <button class="ui red toggle button" id="Z&quot;">Z</button>
-		</div>
-  </div>
+        <button class "button" id "A">A</button>
+        <button class "button" id "B">B</button>
+        <button class "button" id "C">C</button>
+        <button class "button" id "D">D</button>
+        <button class "button" id "E">E</button>
+        <button class "button" id "F">F</button>
+        <button class "button" id "G">G</button>
+        <button class "button" id "H">H</button>
+        <button class "button" id "I">I</button>
+        <button class "button" id "J">J</button>
+        <button class "button" id "K">K</button>
+        <button class "button" id "L">L</button>
+        <button class "button" id "M">M</button>
+    </div>
+    </div><br>
+    <div class="alphaLast">
+       <button class"button" id "N">N</button>
+       <button class"button" id "O">O</button>
+       <button class"button" id "P">P</button>
+       <button class"button" id "Q">Q</button>
+       <button class"button" id "R">R</button>
+       <button class"button" id "S">S</button>
+       <button class"button" id "T">T</button>
+       <button class"button" id "U">U</button>
+       <button class"button" id "V">V</button>
+       <button class"button" id "W">W</button>
+       <button class"button" id "X">X</button>
+       <button class"button" id "Y">Y</button>
+       <button class"button" id "Z">Z</button>
+                          
+  </div><br>
   <div class="wrongGuess">
     Wrong Guesses:
-  </div>
-  
- tries left
+  </div><br>
+  <div class="triesLeft">
+    Tries Left:
+  </div><br>
   <button onclick="myFunction()">RESET GAME</button> 
 	<script src="script.js">
 	</script> <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"
