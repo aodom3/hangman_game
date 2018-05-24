@@ -7,7 +7,7 @@ body{
 float: left;
 width:50%;
 }
-.alphabet{
+.buttons{
     margin:50px;
     margin-left: 20px;
     background-color: rgb(146, 16, 7); /*deep red*/

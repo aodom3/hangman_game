@@ -6,6 +6,9 @@ const tries = 6;
 var wrongGuess=[];
 //how many guesses are left before the game is over
 var triesLeft=0;
+//changes deadpool image
+var changeDeadpool
+
 //dashes in place of each word being guessed
 const ansArray = [];
 
@@ -17,21 +20,29 @@ let secretWord = words[Math.floor(Math.random() * words.length)];
 console.log(secretWord)
 // // blank "_" that is shown on the screen to be populated
 //has to match the letters;loops to same length as the words when using secretword
-
 for (let i = 0; i < secretWord.length; i++) {
 	ansArray[i] = "_";
 }
 console.log(ansArray +'working')
 
+// document.getElementById("button").addEventListener("click", )
+document.getElementById("ansArray").innerHTML="_";
+//everytime the player is wrong, deadpool will vanish partly(loose a life)!! (REEEVIEEEW THIS CODE!!!)
+ function changeDeadpool(){
+	document.getElementById("deadpool").src = "images"+".png"
+ }
+
+
+// document.getElementById("deadpool").src = "images/d2.png";
+
+
+
 let others = words.length;
-while
-if
-else
+
 
 //push words into secretword 
 //   
 // }
-// ---------------action buttons----------------------------------------------------
 
 //resets the page if player wants to
 function myFunction() {
@@ -40,11 +51,6 @@ function myFunction() {
 // pushing appending and append music
 // .map
 // .disable
-
-// start working on read.me and commit a lot
-
-//----------- the game----------------------------------------------------------
-
 let guess
 
 
