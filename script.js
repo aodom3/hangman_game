@@ -26,18 +26,25 @@ for (let i = 0; i < secretWord.length; i++) {
 }
 console.log(ansArray +'working')
 document.getElementById('ansArray').innerHTML = ansArray;
-document.getElementById('triesLeft').innerHTML = triesLeft;
+// document.getElementById('triesLeft').innerHTML = triesLeft;
 
-function(){
+// function changeDeadpool(){
+// 	document.getElementsByClassName("deadpool".src)
 
-}
-
+// }
 
 //everytime the player is wrong, deadpool will vanish partly(loose a life)!! (REEEVIEEEW THIS CODE!!!)
- function changeDeadpool(){
-	document.getElementsByClassName("deadpool").src = "images"+".png"
- }
 
+function lettergrab() {
+	console.log(this.id)
+  }
+  $('.button').on('click',lettergrab)
+}
+let newArray=[];
+function push(){
+	word.push('newArray');
+};
+console.log('newArray')
 //push words into secretword 
 //   
 // }
@@ -49,4 +56,4 @@ function myFunction() {
 // pushing appending and append music
 // .map
 // .disable
-}
+
