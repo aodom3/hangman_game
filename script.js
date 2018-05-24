@@ -44,7 +44,7 @@ let newArray=[];
 function push(){
 	word.push('newArray');
 };
-console.log('newArray')
+console.log('newArray');
 //push words into secretword 
 //   
 // }
@@ -53,7 +53,5 @@ console.log('newArray')
 function myFunction() {
 	location.reload()
 }
-// pushing appending and append music
-// .map
-// .disable
+
 
