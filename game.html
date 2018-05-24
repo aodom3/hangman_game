@@ -14,14 +14,7 @@
         <a href="https://fontmeme.com/fonts/rogue-hero-font/"><img alt="rogue-hero-font" border="0" src="https://fontmeme.com/permalink/180524/78cf9725e559fee6efa32c917b3d35a6.png"></a>
       </center><!-- 
         diffrent body parts that will be deleted as wrong questions are answered -->
-      <div class="dead">
-        <img class="deadpool" src="images/deadpool.png"> <!-- <img class="deadpool2" src="images/d1.png">
-        <img class="deadpool3" src="images/d2.png">
-        <img class="deadpool4" src="images/d3.png">
-        <img class="deadpool5" src="images/d4.png">
-        <img class="deadpool6" src="images/d5.png"> -->
-      </div>
-      <div class="ansArray">
+      <div id="ansArray">
       </div>
 	    <div class="alphabet">
 		    <div class="alphaBegin">
@@ -54,12 +47,19 @@
           <button class"button" id "Y">Y</button>
           <button class"button">Z</button>             
         </div><br>
+        <div class="dead">
+            <img class="deadpool" src="images/deadpool.png"> <!-- <img class="deadpool2" src="images/d1.png">
+            <img class="deadpool3" src="images/d2.png">
+            <img class="deadpool4" src="images/d3.png">
+            <img class="deadpool5" src="images/d4.png">
+            <img class="deadpool6" src="images/d5.png"> -->
+          </div>
         <div class="wrongGuess">
           <h1>Wrong Guesses:</h1>
         </div><br>
-        <div class="triesLeft">
-          <h1>Tries Left:</h1>
-        </div><br>
+        <p class="triesLeft">
+          <h1>This Many Tries Left Buddy:</h1>
+        </p><br>
 </div>
   <button id = "reset" onclick="myFunction(reset)">RESET GAME</button> 
 	<script src="script.js">

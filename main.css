@@ -20,9 +20,18 @@ button{
     
     
 }
-.ansArray{
+#ansArray{
     /* border: 2px black solid; */
-    height: 65px;
+    height: 75px;
+    width: 50%;
+    margin:50px;
     /* background-color:  rgb(146, 16, 7); */
+    position: relative;
+    z-index: 1;
+    font-size: 60px;
 
+}
+#dead{
+    position: absolute;
+    z-index: -2;
 }

@@ -1,4 +1,5 @@
 window.onload = function(){
+
 // --------------------variables-------------------------------------------
 //player only has 6 times to try and guess
 const tries = 6;
@@ -24,11 +25,17 @@ for (let i = 0; i < secretWord.length; i++) {
 	ansArray[i] = "_";
 }
 console.log(ansArray +'working')
-// document.getElementById("button").addEventListener("click", )
-document.getElementsByClassName("ansArray").innerHTML = ansArray;
+document.getElementById('ansArray').innerHTML = ansArray;
+document.getElementById('triesLeft').innerHTML = triesLeft;
+
+function(){
+
+}
+
+
 //everytime the player is wrong, deadpool will vanish partly(loose a life)!! (REEEVIEEEW THIS CODE!!!)
  function changeDeadpool(){
-	document.getElementById("deadpool").src = "images"+".png"
+	document.getElementsByClassName("deadpool").src = "images"+".png"
  }
 
 //push words into secretword 
