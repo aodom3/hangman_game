@@ -11,12 +11,15 @@ Deadman merges the game of hangman with the Marvel character Deadpool. As in the
 ## Wireframe
 
 ## Planned Additions
-More responsive UI
-Score counter
-Add diffrent skill levels to game
+1. More responsive UI
+2. Score counter
+3. Add diffrent skill levels to game
+4. As players get answer wrong, part of Deadpool becomes invisible until nothing is left but the heart
+## Link to User Story
+https://trello.com/b/KplyACAS/wdi-project-1
 
 ## Link to Hangman game
 
-## Acknowledgements
+
 ### Used:
 https://fontmeme.com/fonts/rogue-hero-font/
