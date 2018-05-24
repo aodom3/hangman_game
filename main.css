@@ -1,20 +1,20 @@
 
 body{
-    background-image:url(images/hearts.gif);
-    background
-    
-}
-#dead{
-width:30%;
+    background-image:url(images/heart2.gif);
 }
 
-#button{
-    background-color:black;
-    color:white;
-    size:40px;
+.dead{
+float: left;
+width:50%;
 }
-#alphabet{
-    margin:200px;
-    padding: 
-
+.alphabet{
+    margin:50px;
+    margin-left: 20px;
+    background-color: rgb(146, 16, 7); /*deep red*/
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }

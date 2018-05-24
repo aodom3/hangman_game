@@ -5,26 +5,25 @@
 
 // // words being used
 const words = ["pizza", "golden girls", "unicorn", "chimichanga"];
-
-
+console.log(words)
 // // random word chosen from the array of words
 let secretWord = words[Math.floor(Math.random() * words.length)];
-
-// for (let x = 0; x < words.length; x++) {
-//     secretWord.push(words[x])
-//     console.log(secretWord)   
-// }
-
+console.log(secretWord)
 // // blank "_" that is shown on the screen to be populated
 //has to match the letters;loops to same length as the words
 const ansArray = [];
 for (let i = 0; i < words.length; i++) {
 	ansArray[i] = "_";
 }
+console.log(ansArray)
 let rest = words.length
-console.log(secretWord)
+
 
 //push words into secretword 
+// for (let x = 0; x < words.length; x++) {
+//     secretWord.push(words[x])
+//     console.log(secretWord)   
+// }
 // ---------------action buttons----------------------------------------------------
 
 //resets the page if player wants to
@@ -43,11 +42,3 @@ let guess
 
 
 
-
-// $function(){
-//     $('letters').on('click' function(light))
-// }
-// function gameEnd(win)
-// if (win)
-// else
-// }
