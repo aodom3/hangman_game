@@ -11,7 +11,10 @@ Deadman merges the game of hangman with the Marvel character Deadpool. As in the
 ## Wireframe
 
 ## Planned Additions
+More responsive UI
+Score counter
+Add diffrent skill levels to game
 
 ## Link to Hangman game
 
-## Acknoweledgements
+## Acknowledgements
