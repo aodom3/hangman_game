@@ -10,19 +10,20 @@ console.log(words)
 let secretWord = words[Math.floor(Math.random() * words.length)];
 console.log(secretWord)
 // // blank "_" that is shown on the screen to be populated
-//has to match the letters;loops to same length as the words
+//has to match the letters;loops to same length as the words when using secretword
 const ansArray = [];
 for (let i = 0; i < secretWord.length; i++) {
 	ansArray[i] = "_";
 }
 console.log(ansArray +'working')
-let rest = words.length
 
+let others = words.length;
+while
+if
+else
 
 //push words into secretword 
-// for (let x = 0; x < words.length; x++) {
-//     secretWord.push(words[x])
-//     console.log(secretWord)   
+//   
 // }
 // ---------------action buttons----------------------------------------------------
 
