@@ -12,10 +12,10 @@ console.log(secretWord)
 // // blank "_" that is shown on the screen to be populated
 //has to match the letters;loops to same length as the words
 const ansArray = [];
-for (let i = 0; i < words.length; i++) {
+for (let i = 0; i < secretWord.length; i++) {
 	ansArray[i] = "_";
 }
-console.log(ansArray)
+console.log(ansArray +'working')
 let rest = words.length
 
 
