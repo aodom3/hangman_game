@@ -9,6 +9,7 @@ Deadman merges the game of hangman with the Marvel character Deadpool. As in the
 4. Trello
 
 ## Wireframe
+![wireframe](images/wireframe.png "Wireframe of project")
 
 ## Planned Additions
 1. More responsive UI
