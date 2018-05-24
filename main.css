@@ -1,13 +1,20 @@
 
 body{
     background-image:url(images/hearts.gif);
+    background
     
 }
-/* *{
-    background-color: black;
+#dead{
+width:30%;
+}
 
-} */
-#deadpool{
-    width: 200%
-    height: 400%
+#button{
+    background-color:black;
+    color:white;
+    size:40px;
+}
+#alphabet{
+    margin:200px;
+    padding: 
+
 }

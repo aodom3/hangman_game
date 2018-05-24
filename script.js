@@ -1,96 +1,53 @@
-/*------------- constants -------------*/
-var words = [ 
-    'SPONGEBOB',
-    'SQUIDWARD',
-    'JIMMY NEUTRON',
-    'COSMO',
-    'WANDA',
-    'TIMMY TURNER',
-    'MR KRABS',
-    'MRS PUFF',
-    'SANDY CHEEKS',
-    'DIDI PICKLES',
-    'PATRICK STAR',
-    'CARL WHEEZER'
+// // once the page loads up
+// $(document).ready(function(){
 
-];
+// --------------------words and word bank-------------------------------------------
 
-/*------------- app's state -------------*/
-var secretWord, wrongCount, guess;
+// // words being used
+const words = ["pizza", "golden girls", "unicorn", "chimichanga"];
 
-/*------------- cached element references -------------*/
-var $guess = $('#guess');
-var $img = $('#hang-img');
-var $message = $('#message');
 
-/*------------- event listeners -------------*/
-$('#letters').on('click', handleLetterClick);
+// // random word chosen from the array of words
+let secretWord = words[Math.floor(Math.random() * words.length)];
 
-$('#reset').on('click', initialize);
+// for (let x = 0; x < words.length; x++) {
+//     secretWord.push(words[x])
+//     console.log(secretWord)   
+// }
 
-/*------------- functions -------------*/
-initialize();
-
-function initialize() {
-    wrongCount = 0;
-    secretWord = words[getRandomInt(words.length -1)];
-
-    guess = "";
-    
-    for (var i = 0; i < secretWord.length; i++) {
-      var currentLetter = secretWord[i];
-      if (currentLetter === " ") {
-          guess += " "
-      } else {
-          guess += "_";
-      }
-    };
-
-    $('button.letter-button').prop('disabled', false);
-    render();
+// // blank "_" that is shown on the screen to be populated
+//has to match the letters;loops to same length as the words
+const ansArray = [];
+for (let i = 0; i < words.length; i++) {
+	ansArray[i] = "_";
 }
+let rest = words.length
+console.log(secretWord)
 
-function getRandomInt(max) {
-    return Math.floor (Math.random() * (max + 1));
+//push words into secretword 
+// ---------------action buttons----------------------------------------------------
+
+//resets the page if player wants to
+function myFunction() {
+	location.reload()
 }
+// pushing appending and append music
+// .map
+// .disable
 
-function render() {
-    $guess.html(guess);
-    $('#wrong').html(`WRONG GUESSES: ${wrongCount}`);
-    $img.attr('src', 'images/img' + wrongCount + '.png')
+// start working on read.me and commit a lot
 
-    if (guess === secretWord) {
-        $message.html("Congratulations!! You solved HangMan!");
-        $message.fadeIn();
-    } else if ( wrongCount === 6) {
-        $message.html("Sorry! You've run out of chances.");
-        $message.fadeIn();
-    } else {
-        $message.html("")
-        $message.hide();
-    }
-}
+//----------- the game----------------------------------------------------------
 
-function handleLetterClick (evt) {
-    if (wrongCount === 6) return;
+let guess
 
-    var letter = evt.target.textContent;
-    console.log(secretWord);
-    if (secretWord.includes(letter)) {
-        var pos = secretWord.indexOf(letter);
-        while ( pos >= 0) {
-            guess = guess.split('');
-            guess[pos] = letter;
-            guess = guess.join('');
-            pos = secretWord.indexOf(letter,pos +1);
-        }
-    } else {
-        if (evt.target.id !== "reset") {
-            wrongCount++;
-        }
-    }
-    
-    $(evt.target).prop('disabled', true);
-    $('#reset').prop('disabled', false);
-    render();
-}
+
+
+
+// $function(){
+//     $('letters').on('click' function(light))
+// }
+// function gameEnd(win)
+// if (win)
+// else
+// }

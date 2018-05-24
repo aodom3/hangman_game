@@ -8,19 +8,20 @@
 	<link href="main.css" rel="stylesheet" type="text/css"><!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudFlare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"> -->
 </head>
 <body>
+  <div class ="container">
     <h1>DeadMan (HangMan + Deadpool Style)</h1><br>
 <!-- 
     diffrent body parts that will be deleted as wrong questions are answered -->
-  <div class = "dead"> 
-    <img class="deadpool" src="images/deadpool.png"> 
-    <img class="deadpool2">
-    <img class="deadpool3">
-    <img class="deadpool4">
-    <img class="deadpool5">
-    <img class="deadpool6">
-  </div>
-	<div class="alphabet">
-		<div class="alphaBegin">
+    <div class = "dead"> 
+      <img class="deadpool" src="images/deadpool.png"> 
+      <img class="deadpool2">
+      <img class="deadpool3">
+      <img class="deadpool4">
+      <img class="deadpool5">
+      <img class="deadpool6">
+    </div>
+	  <div class="alphabet">
+		  <div class="alphaBegin">
         <button class "button" id "A">A</button>
         <button class "button" id "B">B</button>
         <button class "button" id "C">C</button>
@@ -34,7 +35,7 @@
         <button class "button" id "K">K</button>
         <button class "button" id "L">L</button>
         <button class "button" id "M">M</button>
-    </div>
+      </div>
     </div><br>
     <div class="alphaLast">
        <button class"button" id "N">N</button>
@@ -49,15 +50,15 @@
        <button class"button" id "W">W</button>
        <button class"button" id "X">X</button>
        <button class"button" id "Y">Y</button>
-       <button class"button" id "Z">Z</button>
-                          
-  </div><br>
-  <div class="wrongGuess">
+       <button class"button" id "Z">Z</button>             
+    </div><br>
+    <div class="wrongGuess">
     Wrong Guesses:
-  </div><br>
-  <div class="triesLeft">
+    </div><br>
+    <div class="triesLeft">
     Tries Left:
-  </div><br>
+    </div><br>
+</div>
   <button onclick="myFunction()">RESET GAME</button> 
 	<script src="script.js">
 	</script> <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"
