@@ -1,16 +1,14 @@
-#DEADMAN(HANGMAN DEADPOOL STYLE)
-Description
-Technologies Used
+# DEADMAN(HANGMAN DEADPOOL STYLE)
 
-HTML
-CSS
-Javascript
-Trello
+##Description
 
-Wireframe
+##Technologies Used:
+1. HTML
+2. CSS
+3. Javascript
+4. Trello
 
+##Wireframe
+##Planned Additions
 
-
-Planned Additions
-
-Link to Hangman game
+##Link to Hangman game
