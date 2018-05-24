@@ -15,6 +15,7 @@ Deadman merges the game of hangman with the Marvel character Deadpool. As in the
 2. Score counter
 3. Add diffrent skill levels to game
 4. As players get answer wrong, part of Deadpool becomes invisible until nothing is left but the heart
+5. Add sound effects/mute button
 ## Link to User Story
 https://trello.com/b/KplyACAS/wdi-project-1
 
