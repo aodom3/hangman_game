@@ -6,9 +6,9 @@ body{
     color: aliceblue;
     word-spacing: 2px;
 }
-.container{
+/* .container{
     height: 100%;
-}
+} */
 .dead{
 float: right;
 width:50%;
@@ -34,4 +34,13 @@ button{
 #dead{
     position: absolute;
     z-index: -2;
+}
+
+h1{
+font-size: 155px;
+text-shadow:
+		-5.5px -1px 0 black,
+		5.5px -1px 0 rgb(230, 1, 1),
+		-5.5px 1px 0 black,
+		5.5px 1px 0 rgb(230, 1, 1);
 }
